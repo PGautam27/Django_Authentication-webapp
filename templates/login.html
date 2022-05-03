@@ -58,8 +58,9 @@ body {
 }
     </style>
 </head>
-<body>
+<body class="text-center">
   <form class="form-signin" method="post" action="/login">
+      {% csrf_token %}
     <img class="mb-4" src="https://source.unsplash.com/1600x1600/?bird" alt="" width="150" height="150">
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
